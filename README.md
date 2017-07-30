@@ -30,7 +30,7 @@ Link to descriptional video : https://www.coursera.org/learn/html-css-javascript
 
 It comprises of two parts:
 
-1. part1.html :  Part 1 is a simple version of the game. When the file is loaded a color is randomly selected from an array of colors and a loop begins which repeatedly asks the player what the color is. However, no feedback is given to the player depending on what he/she enters. The loop simply finishes when the player enters the correct color.
+1. part1.html :  part1.html is a simple version of the game. When the file is loaded a color is randomly selected from an array of colors and a loop begins which repeatedly asks the player what the color is. However, no feedback is given to the player depending on what he/she enters. The loop simply finishes when the player enters the correct color.
 
 2. part2.html : part2.html is the complete game and has an interesting feature.It changes the background colour of the page when user guess the right colour.
 
@@ -39,7 +39,7 @@ It comprises of two parts:
 
 Link to descriptional video : https://www.coursera.org/learn/html-css-javascript/lecture/9pxsz/walkthrough-video-for-matching-game
 
-It is a very interesting game to play with.The page is dividded into two part which contains identical faces on both side except one face.We have to find that extra face on the left side.
+It is a very interesting game to play with.The page is divided into two part which contains identical faces on both side except one face.We have to find that extra face on the left side.
 
 It comprises of four parts:
 
