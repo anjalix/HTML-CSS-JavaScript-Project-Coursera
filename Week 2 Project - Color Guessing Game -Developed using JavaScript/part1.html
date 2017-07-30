@@ -1,0 +1,57 @@
+<!--
+
+part1.html is a simple version of the game.
+When the file is loaded a color is randomly selected from an array of colors 
+and a loop begins which repeatedly asks the player what the color is. 
+However, no feedback is given to the player depending on what he/she enters.
+The loop simply finishes when the player enters the correct color.
+
+
+-->
+
+
+<!DOCTYPE html>
+
+<html> 
+
+	<head>
+		<title> Color Guessing Game </title>
+		<meta name="author" content="Anjali Kumari">
+		<meta name="description" content="Part 1 of Assessment task for practicing Javascript">
+		<script>
+			var colors=["blue" ,"cyan" , "gold" ,"gray" , "green" ,"magenta" ,"orange" ,"red" ,"white" ,"yellow"];
+			var guess_input;
+			
+			var target;
+				var finished=false;
+			function do_game()
+			{
+			var target_index=Math.floor(Math.random()*colors.length);
+			target=colors[target_index];
+			alert(target);
+			
+			while(!finished)
+			{
+			guess_input=prompt("I am thinking of one of these colors: \n \n"+colors.join()+"\n\n What color am I thinking of?");			
+			guess_input=guess_input.toLowerCase();
+			
+			if(guess_input==target)
+			{finished=true;}
+			}
+			
+			
+			}
+			
+			
+			
+		</script>
+	
+	
+	
+	</head>
+	
+	
+	<body onload="do_game()">
+	</body>
+	
+</html>
