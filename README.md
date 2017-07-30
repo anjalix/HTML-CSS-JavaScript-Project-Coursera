@@ -1,7 +1,7 @@
 # HTML-CSS-JavaScript-Project-Coursera-
 This repository contains the projects of Course 1 of Coursera Specialization course - "Full Stack Web Development by
 The Hong Kong University of Science and Technology".
-The course 1 of this specialization deals with HTML,CSS and Javascript.It is a three week course.
+The course 1 of this specialization deals with HTML,CSS and Javascript.It is a three week course and there is assessment projects at the end of each week.
 
 Week 1 Project : Dating Web Site Assessment
 
