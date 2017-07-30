@@ -1,0 +1,77 @@
+<!--
+
+part2.html is the complete game and has an interesting feature.
+It changes the background colour of the page when user guesses the right colour.
+
+-->
+
+
+<!DOCTYPE html>
+
+<html> 
+
+	<head>
+		<title> Color Guessing Game </title>
+		<meta name="author" content="Anjali Kumari">
+		<meta name="description" content="Part 2 of Assessment task for practicing Javascript">
+		<script>
+			var colors=["blue" ,"cyan" , "gold" ,"gray" , "green" ,"magenta" ,"orange" ,"red" ,"white" ,"yellow"];
+			var guess_input;
+			var count=0;
+			var target;
+				var finished=false;
+			function do_game()
+			{
+			var target_index=Math.floor(Math.random()*colors.length);
+			target=colors[target_index];
+			alert("To help you at the time of debugging , here I am displaying my randomly generated color\n\nTarget colour is:\n\n"+ target);
+			
+			while(!finished)
+			{
+			guess_input=prompt("I am thinking of one of these colors: \n \n"+colors.join()+"\n\n What color am I thinking of?");			
+			if(guess_input!='\0')
+			{guess_input=guess_input.toLowerCase();}
+			count++;
+			finished=check_guess();
+			
+			}
+			
+			
+			}
+			function check_guess()
+			{
+			if(colors.indexOf(guess_input)==-1)
+			{
+			alert("Sorry, I don't recognize your color.\n\nPlease try again.");
+			return false;
+			}
+			 if(guess_input>target)
+			{
+			alert("Sorry, your guess is not correct!\n\nHint: your color is alphabetically higher than mine.\n\nPlease try again.");
+			return false;
+			}
+			 if(guess_input<target)
+			{
+			alert("Sorry, your guess is not correct!\n\nHint: your color is alphabetically lower than mine.\n\nPlease try again.");
+			return false;
+			}
+			
+			setTimeout (function(){	
+			alert("Congratulations! You have guessed the color!\n\nIt took you "+count+" guesses to finish the game!\n\nYou can see the color in the background.");
+			return true;
+			},1);
+			myBody=document.getElementsByTagName("body")[0];
+			myBody.style.background=target;
+			
+			}
+		</script>
+	
+	
+	
+	</head>
+	
+	
+	<body onload="do_game()">
+	</body>
+	
+</html>
